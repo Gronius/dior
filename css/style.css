@@ -1,4 +1,3 @@
-
 html {
   box-sizing: border-box;
 }
@@ -10,12 +9,12 @@ html {
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .container {
@@ -24,11 +23,14 @@ ul {
   margin: 0 auto;
 }
 body {
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.4;
-    color: #1B1B1B;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #1b1b1b;
+}
+.header {
+  margin-bottom: 90px;
 }
 
 .header__inner {
@@ -38,24 +40,90 @@ body {
 }
 
 .header__title {
-     font-family: "Playfair Display", serif;
-     font-weight: 400;
-     text-transform: uppercase;
-     margin-left: auto;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-left: auto;
 }
 
 .menu {
-    margin-left: 130px;
-    margin-right: 185px;
+  margin-left: 130px;
+  margin-right: 185px;
 }
 
 .menu__item {
-    font-size: 12px;
-    margin-bottom: 10px;
-    text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .user-nav {
-    display: flex;
-    gap: 0 20px;
+  display: flex;
+  gap: 0 20px;
+}
+
+.top {
+  margin-bottom: 150px;
+}
+.top-slide__inner {
+  min-height: 700px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+.top-slide {
+  min-height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+.top-slide__content {
+  flex-basis: 183px;
+  margin-top: -88px;
+}
+.top-slide__title {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 70px;
+  line-height: 1.3;
+}
+.top-slider__subtitle {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.top-slide__text {
+  margin-bottom: 20px;
+}
+.top-slide__btn {
+  color: #7449bb;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 21px 55px;
+  border: 1px solid #7449bb;
+  display: inline-block;
+  margin-left: auto;
+}
+.top-slide__btn:hover {
+  color: #fff;
+  background-color: #7449bb;
+  transition: all .3s ease;
+}
+.swiper-button-prev::after,
+.swiper-button-next:after {
+  content: none;
+}
+.container-arrow {
+  position: relative;
+  padding: 0px;
+  max-width: 1200px;
+
+}
+.top .swiper {
+  padding-bottom: 50px;
+}
+.swiper-button-next {
+  left: 75px;
+  right: auto;
 }
